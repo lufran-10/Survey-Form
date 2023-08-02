@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <link rel="stylesheet" href="styles.css">
+    <title>KitchenApp | Register</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">KitchenApp</h1>
+      <p id="description">Complete the form below to create your new account</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">Enter your name: <span class="note">*</span> <input id="name" type="text" placeholder="Courtney Smith" required></label>
+        
+        <label id="email-label" for="email">Enter your email: <span class="note">*</span> <input id="email" type="email" placeholder="courtney.sm10@gmail.com" required></label>
+        
+        <label id="number-label" for="number">Enter your age: <input id="number" type="number" placeholder="36" min="13" max="120"></label>
+
+        <label for="dropdown">Where do you plan to use this app?</label>
+        <select id="dropdown" name="device">
+          <option disabled selected>Select...</option>
+          <option value="computer">Computer</option>
+          <option value="cellphone">Cellphone</option>
+          <option value="both">Both</option>
+        </select>
+        
+        <fieldset>
+          <legend>Select the type of account: <span class="note">*</span></legend>
+          <label for="pro"><input id="pro" type="radio" name="account-type" value="pro" checked> Pro <span>(Starting from $8 / month)</span></label>
+          <label for="free"><input id="free" type="radio" name="account-type" value="free"> Free</label>
+        </fieldset>
+        
+        <label for="find">How did you find us?</label>
+        <textarea id="find" name="find" rows="4" maxlength="200" placeholder="Write here..."></textarea>
+
+        <label for="terms-conditions"><input id="terms-conditions" name="terms-conditions-emails" value="tc-accept" type="checkbox" checked required> I accept the <a href="#" target="_blank">terms and conditions</a>.<span class="note">*</span></label>
+        <label for="send-emails"><input id="send-emails" name="terms-conditions-emails" value="em-accept" type="checkbox" checked> I want to recieve email updates.</label>
+
+        <p class="note">* Required field.</p>
+    
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </main>
+    <footer>
+      <p>© 2023 KitchenApp</p>
+    </footer>
+  </body>
+</html>
